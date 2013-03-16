@@ -1,12 +1,70 @@
----
-layout: default
-title: 我的Blog
----
+<!DOCTYPE html>
+<html>
 
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-　　{% for post in site.posts %}
-<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　　　{% endfor %}
-</ul>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Bocy.github.com : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Bocy.github.com</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bocy">View on GitHub</a>
+
+          <h1 id="project_title">Bocy.github.com</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Welcome to Bocy's Blog.</h3>
+
+<p>测试一下代码块</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>不错！</p>
+
+<h3>最新文章</h3>
+
+<p>要补充内容</p>
+
+<h3>学习</h3>
+
+<p>php学习坚持不容易</p>
+
+<h3>测试人员的前途</h3>
+
+<p>迷茫中……</p>
+
+<h3>联系</h3>
+
+<p>有建议联系 <a href="mailto:bocycn@gmail.com">bocycn@gmail.com</a> </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
+
